@@ -14,16 +14,25 @@ color white = #FFFFFF;
 
 void setup() {
   //size(500, 600);
- minim = new Minim(this);
- song1 =minim.loadFile("Savior_Search.mp3");
+  minim = new Minim(this);
+  song1 =minim.loadFile("Savior_Search.mp3");
 }
 
-void draw() {}
+void draw() {
+}
 
 void keyPressed() {
-  if (key == 'p'||key == 'p') {
-  song1.play();
+  if (key == ' '||key == ' ') {
+    if (song1.isPlaying() ) {
+      song1.pause();
+    } else if (song1.position() == song1.length()) {
+    song1.rewind();
+    song1.play();
+    } else {
+      song1.play();
+    }
   }
 }
 
-void mousePressed() {}
+void mousePressed() {
+}
