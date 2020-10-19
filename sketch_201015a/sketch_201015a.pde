@@ -26,20 +26,20 @@ void draw() {
 
 void keyPressed() {
   if (key == ' '||key == ' ') {
-    if (song1.isPlaying() ) {
-      song1.pause();
-    } else if (song1.position() == song1.length()) {
-    song1.rewind();
-    song1.play();
+    if (song[2].isPlaying() ) {
+      song[2].pause();
+    } else if (song[2].position() == song[2].length()) {
+    song[2].rewind();
+    song[2].play();
     } else {
-      song1.play();
+      song[2].play();
     }
   }// End Play-pause
   //
   if (key == 's'|| key == 's') {
-  if (song1.isPlaying() ) {
-  song1.pause();
-  song1.rewind();
+  if (song[2].isPlaying() ) {
+  song[2].pause();
+  song[2].rewind();
    } //End STOP Button
   }
  }
