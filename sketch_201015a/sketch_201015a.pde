@@ -13,7 +13,7 @@ AudioPlayer[] song = new AudioPlayer[numberOfSongs];
 int currentSong = numberOfSongs - numberOfSongs; //Uses formula or FileIO Memory
 
 void setup() {
-  //size(): Console output, not visual data, text promptos only, not complete yet
+  size(650,650); //Console output, not visual data, text promptos only, not complete yet
 
   minim = new Minim(this); //load from data directory, loadFile should also load from project folder
   song[0] = minim.loadFile("Savior_Search.mp3");
