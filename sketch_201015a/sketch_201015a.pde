@@ -25,7 +25,8 @@ void setup() {
   println("Press P to Play and Pause");
 }
 
-void draw() {
+void draw() { circle(325, 525, 70); rect(55, 375, 525, 25); rect(30, 20, 55, 55);
+  
 }
 
 void mousePressed() {
