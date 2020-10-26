@@ -12,6 +12,7 @@ int numberOfSongs = 3;
 AudioPlayer[] song = new AudioPlayer[numberOfSongs];
 int currentSong = numberOfSongs - numberOfSongs; //Uses formula or FileIO Memory
 
+
 void setup() {
   size(650,650); //Console output, not visual data, text promptos only, not complete yet
 
@@ -23,6 +24,8 @@ void setup() {
   println("Start of Console");
   println("Click the Console to Finish Starting this program");
   println("Press P to Play and Pause");
+  
+
 }
 
 void draw() { circle(325, 525, 70); rect(55, 375, 525, 25); rect(30, 20, 55, 55);
