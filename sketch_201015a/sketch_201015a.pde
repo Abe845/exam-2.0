@@ -28,7 +28,8 @@ void setup() {
 
 }
 
-void draw() { circle(325, 525, 70); rect(55, 375, 525, 25); rect(30, 20, 55, 55);
+void draw() { circle(325, 525, 70); rect(55, 410, 525, 25); rect(55, 50, 525, 300); 
+
   
 }
 
@@ -39,7 +40,7 @@ void keyPressed() {
   println ("Current Song before the next or back button, ", "Number: "+currentSong); //For Debugging
   //Solution for Back or Previous Button, copy the next button code: change to -1, change previous song at beginning to last song
   
-  if (key == 'q' || key == 'Q') { //Next Button to Console
+  if (key == 'q' || key == 'w') { //Next Button to Console
     if (song[currentSong].isPlaying()) {
       song[currentSong].pause();
       song[currentSong].rewind();
