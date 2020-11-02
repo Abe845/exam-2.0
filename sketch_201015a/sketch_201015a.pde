@@ -21,7 +21,7 @@ float imageHeightRatio2;
 //
 
 void setup() {
-  size(700, 700); //fullScreen(), displayWidth & displayHeight
+  size(700, 900); //fullScreen(), displayWidth & displayHeight
   //
   minim = new Minim(this); //load from data directory, loadFile should also load from project folder
   song[0] = minim.loadFile("Savior_Search.mp3");
@@ -32,32 +32,17 @@ void setup() {
   println("Click the Console to Finish Starting this program");
   println("Press P to Play and Pause");
   
-  pic = loadImage("1672270.png"); //Dimension: 600 Width, 556Height
-  imageWidthRatio = 600.0/600.0; //must be decmals due to float, larger # for aspect ratio
-  imageHeightRatio = 600.0/556.0; //must be decmals due to float, <1 for aspect ratio
-  imageStartWidth2 = width*0;
-  imageStartHeight2 = height*0;
-  imageWidth2 = width*imageWidthRatio; //Aspect Ratio
-  imageHeight2 = height*imageHeightRatio; //Aspect Ratio
-  // swcond time
-  imageWidthRatio2= 600.0/600.0; //must be decmals due to float, larger # for aspect ratio
-  imageHeightRatio2= 556.0/600.0; //must be decmals due to float, <1 for aspect ratio
-  imageStartWidth2= width*30/700;
-  imageStartHeight2 = height*525/700;
-  imageWidth2 = width*imageWidthRatio2; //Aspect Ratio
-  imageHeight2 = height*imageHeightRatio2; //Aspect Ratio
-  //
-  //rect(imageStartWidth, imageStartHeight, imageWidth, imageHeight);
-  image(pic, imageStartWidth2, imageStartHeight2, imageWidth2, imageHeight2);
-  image(pic, imageStartWidth2, imageStartHeight2, imageWidth2, imageHeight2);
 }
 
 void draw() { 
-  circle(325, 525, 70); 
-  rect(55, 410, 525, 25); 
-  rect(55, 50, 525, 300); 
-  triangle(530, 530, 530, 450, 440, 430);
-  rect(imageStartWidth2, imageStartHeight2, imageWidth2, imageHeight2);
+  circle(350, 575, 70); 
+  rect(55, 465, 560, 25); 
+  rect(55, 85, 560, 300); 
+  circle( 350, 575, 55);
+  circle(250, 575, 70);
+  circle(450, 575, 70);
+  square(430, 555, 40);
+  square(230, 555, 40);
 }
 
 void mousePressed() {
